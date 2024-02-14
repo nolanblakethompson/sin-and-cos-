@@ -5,14 +5,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8"/>
-  </head>
-  <body>
-
-      <iframe src="sin-simple.js" height="1000" width="1000" title="sin-simple"></iframe>
-  
-
-    
-      <iframe src="tan-simple.js" height="1000" width="1000" title="tan-simple"></iframe>
-    
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .grid-item {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>JavaScript File 1</h2>
+      <script src="sin-simple.js"></script>
+    </div>
+    <div class="grid-item">
+      <h2>JavaScript File 2</h2>
+      <script src="tan-simple"></script>
+    </div>
+    <!-- Add more grid items as needed -->
+  </div>
   </body>
 </html>
