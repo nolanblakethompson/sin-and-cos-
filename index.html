@@ -7,58 +7,15 @@
     <meta charset="utf-8"/>
   </head>
   <body>
-     <div class="grid-container">
-       
-    <div id="sketchContainer1" class="grid-item">
-      
-      <script>
-        function sketch1(p) {
-          p.setup = () => {
-            p.createCanvas(1000, 1000);
-          };
-        }
-        new p5(sketch1, "sketchContainer1");
-      </script>
-      
-    </div>
-       
-    <div id="sketchContainer2" class="grid-item">
-      <script>
-        function sketch2(p) {
-          p.setup = () => {
-            p.createCanvas(200, 200);
-            p.background('magenta');
-          };
-        }
+    <div class ="container" id ="grid">
+      <div class ="container">
+      <iframe src="sin-simple.js" height="1000" width="1000" title="sin-simple"></iframe>
+      </div>
 
-        new p5(sketch2, "sketchContainer2");
-      </script>
+      <div class ="container">
+      <iframe src="tan-simple.js" height="1000" width="1000" title="tan-simple"></iframe>
+      </div>
     </div>
-    <div class="grid-item">
-      <script>
-        function sketch3(p) {
-          p.setup = () => {
-            p.createCanvas(200, 200);
-            p.background('yellow');
-          };
-        }
-
-        new p5(sketch3, document.currentScript.parentElement);
-      </script>
-    </div>
-    <div class="grid-item">
-      <script>
-        function sketch4(p) {
-          p.setup = () => {
-            p.createCanvas(200, 200);
-            p.background('black');
-          };
-        }
-
-        new p5(sketch4, document.currentScript.parentElement);
-      </script>
-    </div>
-  </div>
-    
+   
   </body>
 </html>
