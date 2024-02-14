@@ -4,35 +4,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
+    <meta charset="utf-8"/>
   </head>
   <body>
-    <main>
-    <div>
+     <div class="grid-container">
+       
+    <div id="sketchContainer1" class="grid-item">
+      
+      <script>
+        function sketch1(p) {
+          p.setup = () => {
+            p.createCanvas(1000, 1000);
+          };
+        }
+        new p5(sketch1, "sketchContainer1");
+      </script>
+      
+    </div>
+       
+    <div id="sketchContainer2" class="grid-item">
+      <script>
+        function sketch2(p) {
+          p.setup = () => {
+            p.createCanvas(200, 200);
+            p.background('magenta');
+          };
+        }
+
+        new p5(sketch2, "sketchContainer2");
+      </script>
+    </div>
+    <div class="grid-item">
+      <script>
+        function sketch3(p) {
+          p.setup = () => {
+            p.createCanvas(200, 200);
+            p.background('yellow');
+          };
+        }
+
+        new p5(sketch3, document.currentScript.parentElement);
+      </script>
+    </div>
+    <div class="grid-item">
+      <script>
+        function sketch4(p) {
+          p.setup = () => {
+            p.createCanvas(200, 200);
+            p.background('black');
+          };
+        }
+
+        new p5(sketch4, document.currentScript.parentElement);
+      </script>
+    </div>
+  </div>
     
-      <script src="array-of-changing-shapes.js"> </script>
-    </div>
-    <div>
-      <script src="sin-overlapping-oscilating-ellipses.js"> </script>
-    </div>
-    <div>
-    <script src="sin-simple.js"> </script>
-      </div>
-    <div>
-      <script src="tan-simple.js"> </script>
-    </div>
-    <div>
-      <script src="sin-tan-combo.js"> </script>
-    </div>
-    <div>
-      <script src="sin-text-color.js"> </script>
-    </div>
-    <div>
-  
-      <script src="tan-ellipse.js"> </script>
-    </div>
- 
-   </main>
   </body>
 </html>
