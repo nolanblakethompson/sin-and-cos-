@@ -1,4 +1,5 @@
  
+ 
 // save this file as sketch.js
 // Sketch One
 var s = function( p ) { // p could be any variable name
